@@ -15,6 +15,6 @@ public class MainController {
 
     @GetMapping("/github-webhook")
     public ResponseEntity<?> webhook() {
-        return new ResponseEntity<>("------- Jenkins Build/Deploy With Github Webhook  -------", HttpStatus.OK);
+        return new ResponseEntity<>("------- Jenkins Build & Deploy With Github Webhook  -------", HttpStatus.OK);
     }
 }
