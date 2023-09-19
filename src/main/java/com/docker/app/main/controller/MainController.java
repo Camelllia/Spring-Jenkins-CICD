@@ -9,7 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class MainController {
 
     @GetMapping("/jenkins-app")
-    public ResponseEntity<?> docker() {
+    public ResponseEntity<?> jenkins() {
         return new ResponseEntity<>("------- Jenkins Application -------", HttpStatus.OK);
+    }
+
+    @GetMapping("/github-webhook")
+    public ResponseEntity<?> webhook() {
+        return new ResponseEntity<>("------- Jenkins Deploy With Github Webhook  -------", HttpStatus.OK);
     }
 }
