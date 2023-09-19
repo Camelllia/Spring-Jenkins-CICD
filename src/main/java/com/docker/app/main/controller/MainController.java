@@ -10,7 +10,7 @@ public class MainController {
 
     @GetMapping("/jenkins-app")
     public ResponseEntity<?> jenkins() {
-        return new ResponseEntity<>("------- Jenkins Application -------", HttpStatus.OK);
+        return new ResponseEntity<>("------- Jenkins Build Test -------", HttpStatus.OK);
     }
 
     @GetMapping("/github-webhook")
