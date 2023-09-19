@@ -17,4 +17,9 @@ public class MainController {
     public ResponseEntity<?> webhook() {
         return new ResponseEntity<>("------- Jenkins Build & Deploy With Github Webhook  -------", HttpStatus.OK);
     }
+
+    @GetMapping("/down-time/test")
+    public ResponseEntity<?> downTime() {
+        return new ResponseEntity<>("------- Down Time Test  -------", HttpStatus.OK);
+    }
 }
