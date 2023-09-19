@@ -10,11 +10,11 @@ public class MainController {
 
     @GetMapping("/jenkins-app")
     public ResponseEntity<?> jenkins() {
-        return new ResponseEntity<>("------- Jenkins Build -------", HttpStatus.OK);
+        return new ResponseEntity<>("--- Jenkins Build ---", HttpStatus.OK);
     }
 
     @GetMapping("/github-webhook")
     public ResponseEntity<?> webhook() {
-        return new ResponseEntity<>("------- Jenkins Build & Deploy With Github Webhook  -------", HttpStatus.OK);
+        return new ResponseEntity<>("--- Jenkins Build & Deploy With Github Webhook ----", HttpStatus.OK);
     }
 }
