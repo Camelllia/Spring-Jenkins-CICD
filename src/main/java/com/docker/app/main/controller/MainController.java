@@ -10,6 +10,6 @@ public class MainController {
 
     @GetMapping("/github-webhook")
     public ResponseEntity<?> webhook() {
-        return new ResponseEntity<>("---- Jenkins CI & CD With Github Webhook ----", HttpStatus.OK);
+        return new ResponseEntity<>("--- Jenkins CI & CD With Github Webhook ---", HttpStatus.OK);
     }
 }
