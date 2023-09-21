@@ -12,4 +12,9 @@ public class MainController {
     public ResponseEntity<?> webhook() {
         return new ResponseEntity<>("---- Jenkins CI & CD With Github Webhook ----", HttpStatus.OK);
     }
+
+    @GetMapping("/jenkins")
+    public ResponseEntity<?> jenkins() {
+        return new ResponseEntity<>("Jenkins", HttpStatus.OK);
+    }
 }
