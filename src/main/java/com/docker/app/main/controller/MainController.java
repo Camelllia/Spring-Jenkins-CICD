@@ -8,13 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 
-    @GetMapping("/jenkins-app")
-    public ResponseEntity<?> jenkins() {
-        return new ResponseEntity<>("--- Jenkins Build ---", HttpStatus.OK);
-    }
-
     @GetMapping("/github-webhook")
     public ResponseEntity<?> webhook() {
-        return new ResponseEntity<>("--- Jenkins Build & Deploy With Github Webhook ----", HttpStatus.OK);
+        return new ResponseEntity<>("--- Jenkins CI & CD With Github Webhook ----", HttpStatus.OK);
     }
 }
